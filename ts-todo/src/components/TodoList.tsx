@@ -25,7 +25,6 @@ interface ItemForm {
 const TodoItem = ({ todo, onRemove, onToggle, onEdit }: ItemForm) => {
   const { id, content, isCompleted } = todo;
   const [value, setValue] = useState(content)
-  // const [check, setCheck] = useState
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const getValue = (event.target as HTMLInputElement).value
